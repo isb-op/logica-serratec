@@ -106,30 +106,24 @@ programa
 	real triangulo
 	triangulo = ((base * altura2) /2)
 	
-	escreva("\nO valor da área desse triângulo é de: ", triangulo, " cm.\n")
+	escreva("\nO valor da área desse triângulo é de: ", triangulo, " cm².\n")
 
 
 
-//exercício 7: 
-//Escreva um algoritmo que leia a velocidade de um veículo em km/h, e então calcule e exiba na
-//tela a velocidade convertida em m/s (metros por segundo).
+//exercício 7: Escreva um algoritmo que leia a velocidade de um veículo em km/h, e então calcule e exiba na tela a velocidade convertida em m/s. 
+//O algoritmo deve também informar quanto tempo irá levar uma viagem na velocidade média informada de São Paulo até o Rio de Janeiro (435 km).
 
-	inteiro velocidade
-	const inteiro conversaoKm = 3.6
+	real velocidadeKM, SPdistanciaRJ
+	const inteiro conversao = 3.6
+	SPdistanciaRJ = 435
 
 	escreva("Qual a velocidade do veículo em km/h? \n") 
-	leia(velocidade)
+	leia(velocidadeKM)
 	
-	escreva("A velocidade do veículo é de ", velocidade * conversaoKm, " m/s. \n")
-
-//O algoritmo deve também informar quanto tempo irá levar uma viagem na velocidade média
-//informada de São Paulo até o Rio de Janeiro
+	escreva("A velocidade do veículo convertida para m/s é de: \n", (velocidadeKM / conversao), "\n")
 	
-
-
-
-
-
+	escreva("Dado que a velocidade média do veículo é de ", velocidadeKM, " (", (velocidadeKM / conversao), ") ", "a viagem de São Paulo até o Rio de Janeiro, terá duração de ", (SPdistanciaRJ/velocidadeKM), " h.\n")
+	
 
 	}
 }
@@ -139,7 +133,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3061; 
+ * @POSICAO-CURSOR = 3518; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
